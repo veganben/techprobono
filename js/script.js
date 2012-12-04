@@ -14,4 +14,9 @@ $(document).ready(function() {
             $('html,body').animate({scrollTop: top}, 800);
 
     });
+    jQuery('#tech_button').click( function(){
+            var top = $('#fortech').offset().top;
+            $('html,body').animate({scrollTop: top}, 800);
+
+    });
 });

@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+    <head>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+		<meta charset="utf-8">
+        <title>MySQL Common Data Types</title>
+		<link rel="stylesheet" href="css/style.css">
+		<style>
+		    th {
+                font: normal .81em/1.5em Arial, Helvetica, sans-serif;
+                padding: 8px;
+                border-bottom: 1px dotted #644527;
+                background-color: #123456;
+                color: white;
+		    }
+            td {
+                font: normal .81em/1.5em Arial, Helvetica, sans-serif;
+                padding: 3px 0;
+                border-bottom: 1px dotted #644527;
+                color: #123456;
+            }
+        </style>
+
+
+		<script src="js/script.js" type="text/javascript"></script>
+	</head>
+	<body>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Column</th>
+                    <th>Data type</th>
+                    <th>Comment</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>id</strong></td>
+                    <td>INTEGER</td>
+                    <td>AUTO_INCREMENT, UNSIGNED</td>
+                </tr>
+                <tr>
+                    <td><strong>title</strong> </td>
+                    <td>VARCHAR(255)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>description</strong></td>
+                    <td>TINYTEXT</td>
+                    <td>often may not be enough, use TEXT instead</td>
+                </tr>
+                <tr>
+                    <td><strong>post body</strong></td>
+                    <td>TEXT</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>email</strong></td>
+                    <td>VARCHAR(254)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>salt </strong></td>
+                    <td>CHAR(X)</td>
+                    <td>randomly generated string, usually of fixed length</td>
+                </tr>
+                <tr>
+                    <td><strong>digest (md5)</strong></td>
+                    <td>CHAR(32)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>phone</strong></td>
+                    <td>VARCHAR(20)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>file path</strong></td>
+                    <td>VARCHAR(255)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>5-star rating</strong></td>
+                    <td>DECIMAL(3,2)</td>
+                    <td>UNSIGNED</td>
+                </tr>
+                <tr>
+                    <td><strong>price</strong></td>
+                    <td>DECIMAL(7,2)</td>
+                    <td>UNSIGNED</td>
+                </tr>
+                <tr>
+                    <td><strong>date (creation)</strong></td>
+                    <td>DATE/DATETIME</td>
+                    <td>usually displayed as initial date of a post</td>
+                </tr>
+                <tr>
+                    <td><strong>date (tracking)</strong></td>
+                    <td>TIMESTAMP</td>
+                    <td>can be used for tracking changes in a post</td>
+                </tr>
+                <tr>
+                    <td><strong>tags, categories</strong></td>
+                    <td>TINYTEXT</td>
+                    <td>comma separated values<br />
+                </span></td>
+                </tr>
+                <tr>
+                    <td><strong>status</strong> </td>
+                    <td>BOOL / TINYINT(1)</td>
+                    <td>1 &#8211; published, 0 &#8211; unpublished, &#8230;</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+	</body>
+</html>

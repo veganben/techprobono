@@ -13,7 +13,8 @@ body {
 
 }
 
-h1, h2, p, button, caption, label, submit, textarea, span {
+h1, h2, h3, p, button, caption, label, submit, textarea, span {
+    color: ##585352;
     font-family: "PT Sans Narrow";
     font-size: 1.5rem;
 }
@@ -23,6 +24,13 @@ h2 {
     text-align: center;
     line-height: 10rem;
     font-size: 4rem;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+h3 {
+    color: ##585352;
+    font-size: 3rem;
     text-transform: uppercase;
     margin: 0px;
 }
@@ -143,7 +151,6 @@ form {
     background: url(../img/pink_texture.jpg) repeat 0 0 #f6e4e2;
     border-bottom: 2px solid #333;
     padding: 1.5rem 0;
-    display: none;
 }
 
 label {
@@ -176,6 +183,9 @@ input {
     font-size: 1.6rem;
 }
 
+#thanks {
+    display: none;
+}
 .showHide {
     position:relative;
     display:block;

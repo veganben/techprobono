@@ -1,10 +1,10 @@
 <?php
 include 'connect.php';
 
-if (isset($_GET['email']) && !(empty($_GET['email']))){
-	$twitter = mysql_real_escape_string($_GET['twitter']);
-	$github = mysql_real_escape_string($_GET['github']);
-	$email = mysql_real_escape_string(strip_tags($_GET['email']));
+if (isset($_POST['email']) && !(empty($_POST['email']))){
+	$twitter = mysql_real_escape_string($_POST['twitter']);
+	$github = mysql_real_escape_string($_POST['github']);
+	$email = mysql_real_escape_string(strip_tags($_POST['email']));
 
     $alreadyRegistered = mysql_query("SELECT id FROM `DEVELOPER` WHERE `email` = '$email'");
     if (mysql_num_rows($alreadyRegistered) > 0){

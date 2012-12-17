@@ -22,13 +22,18 @@ $(document).ready(function() {
         event.preventDefault();
         var inputs = $('#techform input');
         var serialised = [];
+        if ($("#gihub")[0].value && $("#gihub")[0].value.indexOf("//") !== -1){
+            $("#gihub")[0].value = $("#gihub")[0].value.split("//")[1];
+        }
         inputs.each(function(i){
-            serialised.push("" + inputs[i].name + "=" + inputs[i].value);
+            serialised.push("" + inputs[i].name + "=" + encodeURIComponent(inputs[i].value));
         });
         var query = serialised.join("&");
 
         $.ajax({
-            url: "php/submittech.php?" + query,
+            type: "POST",
+            url: "php/submittech.php",
+            data: query,
             success: function(json){
                 $('#progress').slideDown();
                 var response = json;

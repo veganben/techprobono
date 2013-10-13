@@ -9,135 +9,16 @@ html, body, div, section {
 }
 
 body {
-    background-color: #456789;
-
+    background-color: #456789
 }
 
-h1, h2, h3, p, button, caption, label, submit, textarea, span {
-    color: ##585352;
+h1, h2, h3, p, a, dt, dd, button, caption, label, submit, textarea, span {
+    color: #585352;
+    font-family: Tahoma;
+}
+
+.tpb {
     font-family: "PT Sans Narrow";
-    font-size: 1.5rem;
-}
-
-h2 {
-    color: #d6d6d6;
-    text-align: center;
-    line-height: 10rem;
-    font-size: 4rem;
-    text-transform: uppercase;
-    margin: 0px;
-}
-
-h3 {
-    color: ##585352;
-    font-size: 3rem;
-    text-transform: uppercase;
-    margin: 0px;
-}
-
-a {
-    color: black;
-    font-weight: 700;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-button {
-    margin: 2rem 0 !important;
-    cursor: pointer;
-}
-
-.main {
-    width: 1280px;
-    margin: 0 auto;
-    color: white;
-    background: url(../img/darkgrey_texture.jpg) repeat 0 0 transparent;
-    height: auto;
-    min-height: 100%;
-}
-
-#header {
-    height: 478px;
-    overflow: hidden;
-    text-align: center;
-    background: url(../img/back.jpg) no-repeat 0 0 white;
-}
-
-#header img {
-    margin-top: 32px;
-}
-
-#header p {
-    font-size: 5rem;
-    color: black;
-    font-weight: 700;
-    display: inline-block;
-    letter-spacing: -0.05em;
-    text-transform: uppercase;
-    padding-right: 34px;
-}
-
-#header button {
-    height: 118px;
-    width: 288px;
-    border: 0; margin: 0; padding: 0;
-    opacity: 0.9;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2.4rem;
-    font-weight: 700;
-}
-
-#header button span {
-    display: block;
-    font-size: 1.6rem;
-    text-transform: none;
-    font-weight: 100;
-}
-
-#header #good_cause_button {
-    background: url(../img/cause_button.png) no-repeat 0 0 transparent;
-    padding-right: 32px;
-    z-index: 12;
-}
-
-#header #tech_button {
-    position: relative;
-    left: -45px;
-    background: url(../img/tech_button.png) no-repeat 0 0 transparent;
-    padding-left: 32px;
-    z-index: 10;
-}
-
-#fortech, #forgood {
-    min-height: 185px;
-    overflow: hidden;
-    padding-bottom: 12px;
-}
-#fortech {
-    background-color: #888;
-    background: url(../img/darkgrey_texture.jpg) repeat 0 0 transparent;
-}
-#forgood {
-    color: #567890;
-    background: url(../img/texture.png) repeat 0 0 #fff;
-}
-
-#forgood h2 {
-    color: #456789;
-}
-
-
-#fortech p, #forgood p {
-    width: 820px;
-    margin: 0 auto;
-    padding-bottom: 8px;
-    text-align: justify;
 }
 
 form {
@@ -181,6 +62,17 @@ input {
     border: 0px solid black;
     text-transform: uppercase;
     font-size: 1.6rem;
+}
+
+.closeSection {
+    color: #fff;
+    padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+    margin: 0px;
+    background:  #12a09b no-repeat right center;
+    border: 0px solid black;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 100;
 }
 
 #thanks {

@@ -1,0 +1,202 @@
+/**
+ resets
+**/
+body {
+    background-color: rgb(245, 242, 244);
+    width: 900px;
+}
+
+nav {
+    display: inline-block;
+    width: 34%;
+    float: left;
+}
+
+nav > * {
+    margin: 0 auto;
+}
+
+#main {
+    display: inline-block;
+    width: 64%;
+    float: right;
+}
+
+
+/**
+ components
+**/
+
+/** top bar **/
+#topbar {
+    background: url(../img/logo_tpb.gif) no-repeat white;
+    border: 0;
+    border-bottom: 1px solid rgb(197,197,197);
+    width: 100%;
+}
+
+#site_search {
+    border: 1px solid rgb(197,197,197);
+    background-color: rgb(242,242,244);
+    padding: 2px;
+    color: rgb(42,40,41);
+    background: url(../img/icons/search.png) no-repeat right center;
+    position: absolute;
+    top: 4px;
+}
+
+#topbar_pagelinks {
+    border: 1px solid rgb(197,197,197);
+    background-color: rgb(242,242,244);
+    display: inline-block;
+}
+
+#topbar_pagelinks a {
+    height: 22px;
+    width: 22px;
+    padding: 8px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#topbar_pagelinks a:hover::after {
+    content: attr(data-descr);
+    color: white;
+    display: block;
+    position: relative;
+    min-width: 100px;
+    height: 1rem;
+    padding: 2px;
+    top: 25px;
+    background-color: rgb(107, 107, 107);
+    font-size: 0.95rem;
+    border: 0;
+    text-decoration: none;
+}
+/*
+#topbar_pagelinks a:hover::before {
+    content: "";
+    position: relative;
+    display: block;
+    top: 25px;
+    color: white;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid rgb(107, 107, 107);;
+    background-color: rgb(107, 107, 107);
+}
+*/
+.topbar_pagelink {
+    border: 0;
+    border-right: 1px solid rgb(197, 197, 197);
+}
+
+#loginout {
+    background: url(../img/icons/loginout.png) no-repeat center center;
+}
+#profile_edit {
+    background: url(../img/icons/edit_active.png) no-repeat center center;
+}
+#share {
+    background: url(../img/icons/share.png) no-repeat center center;
+}
+#topbar_pagelinks  #user {
+    width: auto;
+    min-width: 0;
+    font-weight: 100;
+    color: rgb(197, 197, 197);
+    font-size: 1rem;
+    padding-right: 35px;
+    margin-right: 8px;
+    background: url(../img/icons/hanks.png) no-repeat center right;
+}
+
+/**
+nav bar and external links
+**/
+#profile_pic {
+    height: 230px;
+    width: 206px;
+    display: inline-block;
+    background: url(../img/profilepic.png);
+}
+
+h1 {
+    font-family: Tahoma;
+    color: rgb(46, 165, 159);
+    font-size: 2.3rem;
+    font-weight: 100;
+}
+#external_details {
+    padding: 0;
+}
+
+#external_details li {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 32px;
+    font-family: Tahoma;
+    font-weight: 100;
+    font-size: 0.95rem;
+    line-height: 2rem;
+    color: rgb(42, 40, 41);
+}
+
+.location { background: url(../img/icons/location.png) no-repeat 0 center; }
+.personal { background: url(../img/icons/personal.png) no-repeat 0 center; }
+.tumblr { background: url(../img/icons/tumblr.png) no-repeat 0 center; }
+.twitter { background: url(../img/icons/twitter.png) no-repeat 0 center; }
+.meetup { background: url(../img/icons/meetup.png) no-repeat 0 center; }
+.linkedin { background: url(../img/icons/linkedin.png) no-repeat 0 center; }
+.lanyrd { background: url(../img/icons/lanyrd.png) no-repeat 0 center; }
+.github { background: url(../img/icons/github.png) no-repeat 0 center; }
+
+/**
+ project boxes
+**/
+.current_projects article {
+    border: 1px solid #aaa;
+    border-width: 0 2px 3px 0;
+    background-color: white;
+}
+.current_projects  h1 {
+    font-size: 1.5rem;
+    background-color: rgb(46, 165, 159);
+    color: white;
+    padding: 1rem;
+}
+
+.current_projects  h2 {
+    font-size: 1.2rem;
+    color: rgb(41, 41, 41);
+}
+
+.current_projects p {
+    font-size: 1.05rem
+    color: rgb(41, 41, 41);
+}
+
+#main article dt {
+    line-height: 2rem;
+    color: rgb(26, 145, 137);
+    display: inline;
+}
+
+#main article dd {
+    line-height: 2rem;
+    padding:0.3rem 1.2rem;
+    display: inline-block;
+    color: white;
+    background-color: rgb(164, 161, 163);
+    border-width: 3px 0 0 1px;
+    border-style: solid;
+    border-color: rgb(140, 140, 140);
+    border-radius: 2px;
+}
+
+.previous_projects h1 {
+
+
+}

@@ -3,8 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Tech ProBono - matching skills and needs</title>
-	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:100,400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/signup.css">
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="js/script.js" type="text/javascript"></script>
 </head>
@@ -22,23 +23,19 @@
        <section>
             <div id="fortech">
                 <h2>For Technologists:</h2>
-                <p>Over the last few years, technical people have developed a very fine and noble sense of community. Great strides have been taken to make our profession a more tolerant, open and respectful place. Contributions to this community include developing open source software, tools and libraries, organising conferences and meetups, giving our time up to train the next generation of developers, designers and tech writers, or campaigning for equality and respect amongst all people of technology.
+               <!-- <p>Over the last few years, technical people have developed a very fine and noble sense of community. Great strides have been taken to make our profession a more tolerant, open and respectful place. Contributions to this community include developing open source software, tools and libraries, organising conferences and meetups, giving our time up to train the next generation of developers, designers and tech writers, or campaigning for equality and respect amongst all people of technology.
                 <p>The community now is in a wonderful place, and this work will continue, improving the lot for all of us.
                 <p>Now that we are getting our own house in order, it is time to look at our role in the greater communities in which we live.
                 <p>We are a fortunate bunch. We earn far above the national averages of our countries, with considerably better working conditions and opportunities.
                 <p>This puts us in an enviable position of privilege and comfort. But it also gives us a wonderful opportunity to be able to give something back. Wouldn't it be great if, along with our CVs and linked in profiles, we included our list of Good Works in our sense of identity?
-                <p>TechProBono attempts to match geeks with charities, clubs, the next generation of sporting heros, animal shelters, hospitals, schools, good causes and individuals with a technical need, but no finance.
+                -->
+                <p>TechProBono attempts to match technical people of all disciplines with charities, clubs, the next generation of sporting heros, animal shelters, hospitals, schools, good causes and individuals with a technical need, but no access to the people who can help them.
                 <br />
                 <button class="submitForm"  name="" id="revealTechform">sign me up</button>
             </div>
             <div class="form" id="techformdiv">
-            <form id="techform">
-                <p>We are right at the start of this project. As a technologist, the best thing you can do now is to help get it off the ground.</p>
-                <p>To get started right away, go to <a href="https://github.com/veganben/techprobono" title="TBP github repo">our github</a> repository. <br>
-                If you know what it means to <em>fork this project</em>, do that. Check the backlog. Implement an idea of your own.</p>
-                <p>If you're not that sort of tech, create a page on the wiki with ideas. Upload your designs or improve or comment on other people's contributions.</p>
-                <div id="progress">
-                    <p>To hear about progress of the site, pre-register here:</p>
+            <form id="techform"><div id="progress">
+                    <p>We are right at the start of this project, but good to go. Sign up here to register as a tech who wants to go pro bono</p>
 
                     <label for="twitter">Twitter name</label>
                     <input name="twitter" id="twitter"></input>
@@ -51,20 +48,27 @@
                     <br>
                 </div>
                 <div id="report"></div>
+
+                <p>One of the best things you can do now is to help get this project kicking.</p>
+                <p>To get started right away, go to <a href="https://github.com/veganben/techprobono" title="TBP github repo">our github</a> repository. <br>
+                If you know what it means to <em>fork this project</em>, do that. Check the backlog. Implement an idea of your own.</p>
+                <p>If you're not that sort of tech, but have ideas with what we can do to help you give your time, please create a page on the wiki with ideas - it's all point and click stuff!
+                <p>Designers! Why not upload sketches, designs or improve or comment on other people's contributions?</p>
+
+                <a class="closeSection"  name="closetech" id="closetech">Close this</a>
             </form>
             </div>
         </section>
         <section>
             <div id="forgood">
                 <h2>For Good Causes:</h2>
-                <p>We invite you, the Good Causes, to outline your plans and motivations here, and to make a case for need. Perhaps you already have a static website and you would like a simple form to allow your guests to get in touch with you more easily.
+                <p>We invite you, the Good Causes, to outline your plans, and to make a case for need. Perhaps you already have a static website and you would like a simple form to allow your guests to get in touch with you more easily.
                 <p>Maybe you are a small family-run charity with your base firmly in the spare room and you feel that you need a more up-to-date look and feel - perhaps there is a designer out there who likes your cause and would be willing to make you a professionally designed logo.</p>
-                <p>TechProBono attempts to match geeks with charities, clubs, the next generation of sporting heros, animal shelters, hospitals, schools, good causes and individuals with a technical need, but no finance.
-                <br />
-                <button class="submitForm"  name="">pre-register ( coming soon )</button>
+                <p>What ever it is, leave us some contact details and we'll get in touch with you<br />
+                <button class="submitForm"  id="revealCausesform">Register your Cause</button>
+                </p>;
             </div>
-            <!--
-            <div class="form">
+            <div class="form" id="goodcauseformdiv">
                 <form id="goodcauseform">
                     <p>
                     <label for="orgname">Organisation Name</label>
@@ -74,11 +78,10 @@
                     <label for="website">Contact email</label>
                     <input type="email" id="website"></input>
                     <br>
-                    <button class="submitForm" name="submitgoodcause">Submit</button>
-
+                    <button class="submitForm" name="submitgoodcause" id="submitgoodcause">Submit</button>
                 </form>
             </div>
-            -->
+            <div id="reportGoodCause"></div>
         </section>
 
 

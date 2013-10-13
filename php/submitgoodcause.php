@@ -10,7 +10,7 @@ if (isset($_POST['email']) && !(empty($_POST['email']))){
     if (mysql_num_rows($alreadyRegistered) > 0){
         $json =   '{"error": "already_registered"}';
     } else {
-        $query_insertOrg = "INSERT INTO `CAUSES` (`orgname`,`website`, `github`) VALUES ('$orgname', '$website', '$github')";
+        $query_insertOrg = "INSERT INTO `CAUSES` (`orgname`,`website`, `email`) VALUES ('$orgname', '$website', '$email')";
         $insertOrg = mysql_query($query_insertOrg);
         $insertId = mysql_insert_id($con) || "error";
         mysql_close($con);

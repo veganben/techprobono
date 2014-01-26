@@ -1,6 +1,9 @@
 techprobono
 ===========
 
++ Techprobono has moved
++ Please find it here: https://github.com/techprobono/techprobono.org
+
 Over the last few years, technical people have developed a very fine and noble sense of community. Great strides have been taken to make our profession a more tolerant, open and respectful place. Contributions to this community include developing open source software, tools and libraries, organising conferences and meetups, giving our time up to train the next generation of developers, designers and tech writers, or campaigning for equality and respect amongst all people of technology.
 
 The community now is in a wonderful place, and this work will continue, improving the lot for all of us.
